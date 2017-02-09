@@ -163,10 +163,10 @@
 										<div class="row">
 											<div class="hero-subscribe-wrapper col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
 
-												<form id="hero-subscribe" class="the-subscribe-form" data-sr="enter bottom over .5s and move 10px wait 0.3s" method="POST">
+											<form id="hero-subscribe" action="mailgun.php" method="POST">
 
 													<div class="input-group">
-														<input type="email" class="form-control" placeholder="Deixe seu e-mail aqui!!" name="email" id="campo-formulario-1" required="required" onInvalid="setCustomValidity('Por favor, nos informe o seu email!')" onChange="try{setCustomValidity('')}catch(e){}">
+														<input type="email" class="form-control" placeholder="Deixe seu e-mail aqui!!" name="email-1" required="required-field" onInvalid="setCustomValidity('Por favor, nos informe o seu email!')" onChange="try{setCustomValidity('')}catch(e){}">
 														<span class="input-group-btn">
 															<button class="btn btn-subscribe" id="header-subscribe" type="submit">Quero Evitar Perdas</button>
 														</span>
@@ -362,9 +362,9 @@
 
 												<div class="clearfix"></div>
 
-												<form id="breaking-subscribe" action="#1" method="POST">
+												<form id="breaking-subscribe" action="mailgun2.php" method="POST">
 													<div class="input-group" style="margin:0 auto;">
-														<input type="email" class="form-control input-email-person" placeholder="Deixe seu e-mail aqui!" name="email-2" id="campo-formulario-2" required="required-field" oninvalid="setCustomValidity('Por favor, nos informe o seu email!')" onchange="try{setCustomValidity('')}catch(e){}">
+														<input type="email" class="form-control input-email-person input-modified-size" placeholder="Deixe seu e-mail aqui!" name="email-2" id="campo-formulario-2" required="required-field" oninvalid="setCustomValidity('Por favor, nos informe o seu email!')" onchange="try{setCustomValidity('')}catch(e){}">
 														<button class="cta cta-default all-caps clearfix" id="header-subscribe-2" style="border:none;" data-sr="enter bottom over 1s and move 75px" type="submit">Quero Evitar Perdas</button>
 													</div>
 												</form> <!--/ #breaking-subscribe -->
@@ -813,10 +813,11 @@
 		<!-- AjaxChimp -->
 		<script src="js/minified/jquery.ajaxchimp.min.js"></script>
 
-		<!-- AjaxMailGun -->
+		<!-- AjaxMailGun
 		<script src="js/jquery.ajaxmailgun.js"></script>
 		<script src="js/jquery.ajaxmailgun2.js"></script>
 		<script src="js/jquery.ajaxmailgun3.js"></script>
+		-->
 
 		<!-- Swipebox -->
 		<script src="js/minified/jquery.swipebox.min.js"></script>

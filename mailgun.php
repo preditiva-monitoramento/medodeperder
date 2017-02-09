@@ -1,5 +1,4 @@
 <?php
-$email = $_POST['email'];
 
 if(empty($_POST) || !isset($_POST)) {
 
@@ -22,16 +21,6 @@ if(empty($_POST) || !isset($_POST)) {
 
   }
 
-  if($mailgun1) {
-
-    ajaxResponse('success', 'Great success.', $postData, $mailgun1);
-
-  } else {
-
-    ajaxResponse('error', 'Mailgun did not connect properly.', $postData, $mailgun1);
-
-  }
-
 }
 
 function ajaxResponse($status, $message, $data = NULL, $mg = NULL) {
@@ -47,15 +36,15 @@ function ajaxResponse($status, $message, $data = NULL, $mg = NULL) {
 
 function sendMailgun($data) {
 
-  $api_key = 'key-fe2c5b046d9fdd70458fc8cb85d4929a';
+  $api_key = 'key-d84f8aeb9af3545623a3c370c0283b63';
   $api_domain = 'medodeperder.com.br';
-  $send_to = 'sergio.silva.unb@gmail.com';
+  $send_to = 'contato@medodeperder.com.br';
 
-  $name = $data['name'] = "Sérgio Silva";
-  $email = $data['email'];
-  $content = $data['message'] = "Qualquer coisa que não seja importante";
+  $name = $data['name'];
+  $email = $data['email-1'];
+  $content = $data['message'];
 
-  $messageBody = "Contato: $name $email\n\nMensagem: $content ";
+  $messageBody = "Contato: $email";
 
 
   $config = array();

@@ -3276,7 +3276,6 @@ ul.portfolio-list li.ext-link figure:focus img {
 
 #breaking-subscribe input[type="email"] {
     padding: 20px;
-    max-width: 300px;
     height: 50px;
     border: none;
     -webkit-border-radius: 8px 0 0 8px;
@@ -3291,7 +3290,6 @@ ul.portfolio-list li.ext-link figure:focus img {
 
 #breaking-subscribe .input-email-person {
     padding: 20px;
-    max-width: 50% !important;
     height: 50px;
     border: none;
     -webkit-border-radius: 8px !important;
@@ -3304,6 +3302,10 @@ ul.portfolio-list li.ext-link figure:focus img {
     font-size: 16px;
     margin: 0 auto !important;
     text-align: center;
+}
+
+#breaking-subscribe .input-modified-size {
+	width: 100% !important;
 }
 
 /**

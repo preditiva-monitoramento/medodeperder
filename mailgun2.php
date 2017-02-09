@@ -1,5 +1,4 @@
 <?php
-$email = $_POST['email-2'];
 
 if(empty($_POST) || !isset($_POST)) {
 
